@@ -1,12 +1,12 @@
 import './App.css';
-import BoxPreviewer from './components/BoxPreviewer/BoxPreviewerComponent';
+import InputsForm from './components/InputsForm/InputsComponents';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <h2>Border radius previewer</h2>
-        <BoxPreviewer/>
+        <InputsForm />
       </header>
     </div>
   );

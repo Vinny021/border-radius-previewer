@@ -1,0 +1,35 @@
+.InputRow{
+    /* width: 23rem; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .RadiusInputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0;
+    width: 10rem;
+    margin-left: 3rem;
+  }
+  
+  .Inputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 1.25rem;
+  }
+  
+  .Inputs input {
+    height: 0.75rem;
+    width: 3rem;
+    margin-left: auto; 
+    margin-right: 0;
+  }
+  
+  .Inputs p {
+    font-size: small;
+    margin-left: 0; 
+    margin-right: auto;
+  }
