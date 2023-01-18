@@ -1,5 +1,9 @@
 .Box {
     min-height: 10rem;
+    max-height: 10rem;
     min-width: 10rem;
+    max-width: 10rem;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #61dafb;
 }
