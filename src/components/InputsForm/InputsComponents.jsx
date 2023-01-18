@@ -15,6 +15,18 @@ function InputsForm() {
       setMeasurement(newMeasurement);
     };
 
+    const copyCss = () => {
+      var css = 
+      `.Box {
+        min-height: 10rem;
+        min-width: 10rem;
+        background-color: #61dafb;
+        border-radius: ${topLeft}${measurement} ${topRight}${measurement} ${bottomLeft}${measurement} ${bottomRight}${measurement}
+      }`
+
+      navigator.clipboard.writeText(css);
+    }
+
     return(
         <div>
           <div className='InputRow'>
@@ -56,6 +68,7 @@ function InputsForm() {
             </div> */}
           </div>
           <BoxPreviewer topLeft={topLeft} topRight={topRight} bottomLeft={bottomLeft} bottomRight={bottomRight} measurement={measurement}/>
+          
           <ToggleButtonGroup
             style={{marginTop:'1rem', backgroundColor:'white'}}
             color="primary"
@@ -66,6 +79,8 @@ function InputsForm() {
             <ToggleButton style={{width:'3rem'}} value="px">Px</ToggleButton>
             <ToggleButton style={{width:'3rem'}} value="%">%</ToggleButton>
           </ToggleButtonGroup>
+          
+          <button className='copyButton' onClick={copyCss}>Copiar Código</button>
         </div>
     );
 }

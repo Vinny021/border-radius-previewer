@@ -33,3 +33,13 @@
     margin-left: 0; 
     margin-right: auto;
   }
+
+  .copyButton{
+    display: flex;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+    color: #1976d2;;
+    background-color: #282c34;
+  }
