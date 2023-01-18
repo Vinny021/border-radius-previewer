@@ -21,12 +21,17 @@ function InputsForm() {
     };
 
     const copyCss = () => {
+      const normalBR = `${topLeft}${measurement} ${topRight}${measurement} ${bottomLeft}${measurement} ${bottomRight}${measurement}`;
+      const elipticalBR = `/ ${eTopLeft}${measurement} ${eTopRight}${measurement} ${eBottomLeft}${measurement} ${eBottomRight}${measurement}`
+
+      const finalBR = showEliptical ? normalBR+elipticalBR : normalBR;
+
       var css = 
       `.Box {
         min-height: 10rem;
         min-width: 10rem;
         background-color: #61dafb;
-        border-radius: ${topLeft}${measurement} ${topRight}${measurement} ${bottomLeft}${measurement} ${bottomRight}${measurement}
+        border-radius: ${finalBR}
       }`
 
       navigator.clipboard.writeText(css);
